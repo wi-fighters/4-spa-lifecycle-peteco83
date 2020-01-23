@@ -13,7 +13,7 @@
 
 # Task 3: Adding State & User component
 
-1. In the SearchResults-component‘s state, add an array “users“ which should contain all of the user data shown in the table.
+1. In the SearchResults-component‘s state,Use fetch to get data from API ([jsonplaceholder API link](https://jsonplaceholder.typicode.com/users)) and add receieved data into an array “users“ which should contain all of the user data shown in the table.
 2. Create a stateless component “User“ which receives three props: id, name and email. User should return JSX of one table-row (tr) that consists of three table-cells (td). For id, name and email.
 3. Inside SearchResult‘s table, render User-components instead of table-rows (tr). Therefore, use the state‘s users-Array and the Array.map method.
 
