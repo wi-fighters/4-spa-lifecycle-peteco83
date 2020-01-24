@@ -21,13 +21,13 @@
 
 # Task 4: Adding Search Function
 
-1. In the App-component‘s state, add a variable searchTerm.Add an onChange event for the searchbox and update  searchTerm whenever the textbox changes.
+1. In the App-component‘s state, add a variable searchTerm. Add an onChange event for the searchbox and update  searchTerm whenever the textbox changes.
 2. Add an onClick-event for the “Search“-button. When the button is clicked, lastSearchTerm will be set to searchTerm.
 3. Pass lastSearchTerm as props down to the SearchResults-component. Name it “searchFor“.
 4. Inside the SearchResults-component, filter the users-Array to the users where the name or email includes the incoming lastSearchTerm as substring. I.e. If the lastSearchTerm is „joh“ then only the users John Smith,Kyra Johnson and Mike Johnson will be shown.
 
 
-# Task 4: Adding State & User component
+### Adding State & User component
 ![task 4 reference image](reference-images/task4.jpg)
 
 # Task 5: Only search again, if the searchterm differs
@@ -55,17 +55,15 @@ last one.
 
 1. In your Header-component, add the following two span-elements containing “Search“ and “About“.
 ![task 6 reference image](reference-images/task6.1.jpg)
-2. Create a new stateless component “About“ which only shows one horizontally centered div displaying:
+2. Create a new stateless component “About“ which only shows one horizontally centered div displaying.
 
 3. Inside the App-component‘s state, create the variable “currentPage“ that is initially set to “search“.
 4. Implement the following conditional-rendering: whenever currentPage is set to “search“, the SearchResults- component will be shown. Whenever it is set to “about“, the About-component will be shown. Test it by setting currentPage to “about“ and reload the page: now only the About-component is shown.
 
-# Task 6: Adding a navigation without React-Router
-
-### A: When your App-component‘s state variable “currentPage“ is set to **“about“** , this should be the output.
+### A: When your App-component‘s state variable “currentPage“ is set to **“about“** , this should be the output:
 ![task 6 reference image](reference-images/task6.jpg)
 
-### B: When your App-component‘s state variable “currentPage“ is set to **“search“,** this should be the output.
+### B: When your App-component‘s state variable “currentPage“ is set to **“search“,** this should be the output:
 ![task 6 reference image](reference-images/task6.1.jpg)
 
 
@@ -83,9 +81,6 @@ last one.
     print out to the console “The SearchResults-component will unmount“.
 11. Test your web-app now. When you click on “Search“ and then on “About“, what do you
     see in the console? How can you explain this output?
-
-# Task 6: Adding a navigation without React-Router
-![task 6.2 reference image](reference-images/task61.jpg)
 
 # Task 7 (Advanced): FETCH 
 ### When the SearchResults-component mounts,load the user-data from
